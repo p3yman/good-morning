@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Quote from "../Quote";
 
 function Image() {
-  const url = "https://source.unsplash.com/random?morning";
+  const url = "https://source.unsplash.com/random?morning,nature";
   const [img, setImg] = useState(null);
 
   const fetchImg = async () => {

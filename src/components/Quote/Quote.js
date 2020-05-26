@@ -9,7 +9,7 @@ function Quote() {
     <div className="quote">
       <div className="content">
         <div className="text">{quote.text}</div>
-        <div className="author">- {quote.author}</div>
+        {quote.author ? <div className="author">- {quote.author}</div> : null}
       </div>
     </div>
   );
