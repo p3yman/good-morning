@@ -1,0 +1,106 @@
+@import url("https://yarnpkg.com/en/package/normalize.css");
+@import url("https://fonts.googleapis.com/css2?family=Unna&family=Satisfy&display=swap");
+$ff: "Unna";
+
+/// RESET
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/// APP
+.App {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+
+  > .left {
+    flex: 0 0 400px;
+    box-shadow: 3px 0 10px rgba(#000, 0.1);
+    position: relative;
+    z-index: 100;
+  }
+}
+
+/// HEADER
+header {
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px solid #e7e7e7;
+
+  .title {
+    font-size: 32px;
+    font-family: Satisfy;
+    color: #009688;
+  }
+}
+
+/// IMAGE
+.image {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.quote {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  color: #ffffff;
+  padding: 300px 50px 50px;
+  display: flex;
+  justify-content: center;
+
+  &:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      to top,
+      rgba(#000, 0.9),
+      rgba(#000, 0.6),
+      transparent
+    );
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  .content {
+    width: 70%;
+  }
+  .text {
+    font-family: $ff;
+    text-shadow: 1px 1px 1px rgba(#000, 0.2);
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    line-height: 1.3;
+  }
+  .author {
+    font-family: Satisfy;
+    text-align: right;
+    font-size: 1.2rem;
+  }
+}
+
+/// TODO
+.todo {
+  padding: 50px;
+}
