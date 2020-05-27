@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/good-morning/static/css/main.1489b5c3.chunk.css",
+    "main.js": "/good-morning/static/js/main.a3e99f59.chunk.js",
+    "main.js.map": "/good-morning/static/js/main.a3e99f59.chunk.js.map",
+    "runtime-main.js": "/good-morning/static/js/runtime-main.582dc826.js",
+    "runtime-main.js.map": "/good-morning/static/js/runtime-main.582dc826.js.map",
+    "static/js/2.50ddae00.chunk.js": "/good-morning/static/js/2.50ddae00.chunk.js",
+    "static/js/2.50ddae00.chunk.js.map": "/good-morning/static/js/2.50ddae00.chunk.js.map",
+    "index.html": "/good-morning/index.html",
+    "precache-manifest.6194fb11ed0b955f4135994522a42cf8.js": "/good-morning/precache-manifest.6194fb11ed0b955f4135994522a42cf8.js",
+    "service-worker.js": "/good-morning/service-worker.js",
+    "static/css/main.1489b5c3.chunk.css.map": "/good-morning/static/css/main.1489b5c3.chunk.css.map",
+    "static/js/2.50ddae00.chunk.js.LICENSE.txt": "/good-morning/static/js/2.50ddae00.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.582dc826.js",
+    "static/js/2.50ddae00.chunk.js",
+    "static/css/main.1489b5c3.chunk.css",
+    "static/js/main.a3e99f59.chunk.js"
+  ]
+}
