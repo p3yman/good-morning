@@ -1,22 +1,18 @@
 {
   "files": {
-    "main.css": "/good-morning/static/css/main.e9eff1ee.chunk.css",
+    "main.css": "/good-morning/static/css/main.a5d8c923.chunk.css",
     "main.js": "/good-morning/static/js/main.cecab527.chunk.js",
-    "main.js.map": "/good-morning/static/js/main.cecab527.chunk.js.map",
     "runtime-main.js": "/good-morning/static/js/runtime-main.582dc826.js",
-    "runtime-main.js.map": "/good-morning/static/js/runtime-main.582dc826.js.map",
     "static/js/2.50ddae00.chunk.js": "/good-morning/static/js/2.50ddae00.chunk.js",
-    "static/js/2.50ddae00.chunk.js.map": "/good-morning/static/js/2.50ddae00.chunk.js.map",
     "index.html": "/good-morning/index.html",
-    "precache-manifest.8ca27639b4d5a45cb88497a01ced441e.js": "/good-morning/precache-manifest.8ca27639b4d5a45cb88497a01ced441e.js",
+    "precache-manifest.71c8b5c7c1fe0df819b5152dc35887c4.js": "/good-morning/precache-manifest.71c8b5c7c1fe0df819b5152dc35887c4.js",
     "service-worker.js": "/good-morning/service-worker.js",
-    "static/css/main.e9eff1ee.chunk.css.map": "/good-morning/static/css/main.e9eff1ee.chunk.css.map",
     "static/js/2.50ddae00.chunk.js.LICENSE.txt": "/good-morning/static/js/2.50ddae00.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.582dc826.js",
     "static/js/2.50ddae00.chunk.js",
-    "static/css/main.e9eff1ee.chunk.css",
+    "static/css/main.a5d8c923.chunk.css",
     "static/js/main.cecab527.chunk.js"
   ]
 }
