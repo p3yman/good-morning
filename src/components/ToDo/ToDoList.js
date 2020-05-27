@@ -1,5 +1,6 @@
 import React from "react";
 import { isToday, isYesterday } from "../../utils";
+import ToDoListPart from "./ToDoListPart";
 
 function ToDoList(props) {
   const todayList = props.items.filter((item) => isToday(item.date));
@@ -10,37 +11,13 @@ function ToDoList(props) {
       {yesterdayList.length ? (
         <div className="day">
           <div className="title">Yesterday</div>
-          <ul className="todo-list">
-            {yesterdayList.map((item, i) => (
-              <li key={`item-${i}`} className="item">
-                <input
-                  type="checkbox"
-                  id={`item-${i}`}
-                  checked={item.done}
-                  onChange={() => props.toggleItem(i)}
-                />
-                <label htmlFor={`item-${i}`}>{item.title}</label>
-              </li>
-            ))}
-          </ul>
+          <ToDoListPart items={yesterdayList} toggleItem={props.toggleItem} />
         </div>
       ) : null}
       {todayList.length ? (
         <div className="day">
           <div className="title">Today</div>
-          <ul className="todo-list">
-            {todayList.map((item, i) => (
-              <li key={`item-${i}`} className="item">
-                <input
-                  type="checkbox"
-                  id={`item-${i}`}
-                  checked={item.done}
-                  onChange={() => props.toggleItem(i)}
-                />
-                <label htmlFor={`item-${i}`}>{item.title}</label>
-              </li>
-            ))}
-          </ul>
+          <ToDoListPart items={todayList} toggleItem={props.toggleItem} />
         </div>
       ) : null}
       {}

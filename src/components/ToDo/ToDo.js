@@ -22,9 +22,7 @@ function ToDo() {
    * @param {event} e
    * @param {string} title
    */
-  const addItem = (e, title) => {
-    e.preventDefault();
-
+  const addItem = (title) => {
     const newItems = [...items];
     newItems.push({
       title,
@@ -36,10 +34,11 @@ function ToDo() {
 
   /**
    * Toggle status of todo list item
-   * @param {number} i
+   * @param {number} date
    */
-  const toggleItem = (i) => {
+  const toggleItem = (date) => {
     const newItems = [...items];
+    const i = newItems.findIndex((item) => item.date === date);
     newItems[i].done = !newItems[i].done;
     setItems(newItems);
   };

@@ -4,9 +4,15 @@ function ToDoForm(props) {
   const [item, setItem] = useState("");
 
   function submit(e) {
+    e.preventDefault();
+
+    if (!item) {
+      return;
+    }
+
     const title = item;
     setItem("");
-    props.addItem(e, title);
+    props.addItem(title);
   }
 
   return (
