@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cd362d5975dda739f4a68fb1b6ff912a",
+    "revision": "c9e7c8be36ff54c9e50daeea3f9eb992",
     "url": "/good-morning/index.html"
   },
   {
-    "revision": "876dae9e1cd8f5ea1a43",
+    "revision": "f1ce47f0fd955cdb1665",
     "url": "/good-morning/static/css/main.a5d8c923.chunk.css"
   },
   {
-    "revision": "e0a542e41db1c020dbd3",
-    "url": "/good-morning/static/js/2.50ddae00.chunk.js"
+    "revision": "47fa50a8f1581ca77c77",
+    "url": "/good-morning/static/js/2.02973462.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/good-morning/static/js/2.50ddae00.chunk.js.LICENSE.txt"
+    "url": "/good-morning/static/js/2.02973462.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "876dae9e1cd8f5ea1a43",
-    "url": "/good-morning/static/js/main.cecab527.chunk.js"
+    "revision": "f1ce47f0fd955cdb1665",
+    "url": "/good-morning/static/js/main.5f00571e.chunk.js"
   },
   {
     "revision": "5e84ced652413d934779",
