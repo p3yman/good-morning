@@ -115,9 +115,25 @@ header {
   margin-top: 20px;
 }
 
+.todo-list-wrapper {
+  margin-top: 30px;
+
+  .day {
+    margin-bottom: 30px;
+
+    .title {
+      font-family: Satisfy;
+      color: #00bcd4;
+      margin-bottom: 10px;
+      padding-bottom: 5px;
+      border-bottom: 1px dotted #e8e9f0;
+    }
+  }
+}
+
 ul.todo-list {
   padding: 0;
-  margin: 20px 0 0;
+  margin: 0;
   list-style: none;
 
   li.item {
@@ -127,7 +143,7 @@ ul.todo-list {
 
     label {
       padding: 0 5px;
-      margin-left: 10px;
+      margin-left: 5px;
       position: relative;
       color: #9191a7;
       position: relative;

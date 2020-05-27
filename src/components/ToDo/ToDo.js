@@ -1,11 +1,15 @@
 import React, { useState, useEffect } from "react";
+import { isToday, isYesterday } from "../../utils";
 import ToDoForm from "./ToDoForm";
 import ToDoList from "./ToDoList";
 
+function isValid(item) {
+  return isToday(item.date) || (isYesterday(item.date) && !item.done);
+}
+
 function ToDo() {
-  const defaultItems = localStorage.getItem("items")
-    ? JSON.parse(localStorage.getItem("items"))
-    : [];
+  let defaultItems = JSON.parse(localStorage.getItem("items") || "[]");
+  defaultItems = defaultItems.filter((item) => isValid(item));
   const [items, setItems] = useState(defaultItems);
 
   useEffect(() => {

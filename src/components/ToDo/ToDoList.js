@@ -1,25 +1,49 @@
 import React from "react";
+import { isToday, isYesterday } from "../../utils";
 
 function ToDoList(props) {
+  const todayList = props.items.filter((item) => isToday(item.date));
+  const yesterdayList = props.items.filter((item) => isYesterday(item.date));
+
   return (
-    <div>
-      {props.items.length ? (
-        <ul className="todo-list">
-          {props.items.map((item, i) => (
-            <li key={`item-${i}`} className="item">
-              <input
-                type="checkbox"
-                id={`item-${i}`}
-                checked={item.done}
-                onChange={() => props.toggleItem(i)}
-              />
-              <label htmlFor={`item-${i}`}>{item.title}</label>
-            </li>
-          ))}
-        </ul>
-      ) : (
-        <div className="empty">No items has been added yet</div>
-      )}
+    <div className="todo-list-wrapper">
+      {yesterdayList.length ? (
+        <div className="day">
+          <div className="title">Yesterday</div>
+          <ul className="todo-list">
+            {yesterdayList.map((item, i) => (
+              <li key={`item-${i}`} className="item">
+                <input
+                  type="checkbox"
+                  id={`item-${i}`}
+                  checked={item.done}
+                  onChange={() => props.toggleItem(i)}
+                />
+                <label htmlFor={`item-${i}`}>{item.title}</label>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ) : null}
+      {todayList.length ? (
+        <div className="day">
+          <div className="title">Today</div>
+          <ul className="todo-list">
+            {todayList.map((item, i) => (
+              <li key={`item-${i}`} className="item">
+                <input
+                  type="checkbox"
+                  id={`item-${i}`}
+                  checked={item.done}
+                  onChange={() => props.toggleItem(i)}
+                />
+                <label htmlFor={`item-${i}`}>{item.title}</label>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ) : null}
+      {}
     </div>
   );
 }
