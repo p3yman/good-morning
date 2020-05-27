@@ -5,10 +5,15 @@ function ToDoList(props) {
     <div>
       {props.items.length ? (
         <ul className="todo-list">
-          {props.items.map((item) => (
-            <li>
-              <input type="checkbox" checked={item.done} />
-              <span>{item.title}</span>
+          {props.items.map((item, i) => (
+            <li key={`item-${i}`} className="item">
+              <input
+                type="checkbox"
+                id={`item-${i}`}
+                checked={item.done}
+                onChange={() => props.toggleItem(i)}
+              />
+              <label htmlFor={`item-${i}`}>{item.title}</label>
             </li>
           ))}
         </ul>

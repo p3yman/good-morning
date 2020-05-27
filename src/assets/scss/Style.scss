@@ -1,4 +1,3 @@
-@import url("https://yarnpkg.com/en/package/normalize.css");
 @import url("https://fonts.googleapis.com/css2?family=Unna&family=Satisfy&display=swap");
 @import url("https://cdn.rawgit.com/peyman3d/koochak/V0.10.2/dist/koochak.css");
 $ff: "Unna";
@@ -104,4 +103,48 @@ header {
 /// TODO
 .todo {
   padding: 50px;
+}
+
+.empty {
+  text-align: center;
+  color: #999999;
+  font-family: monospace;
+  font-size: 13px;
+  padding: 30px;
+  border: 1px dashed #e7e7e7;
+  margin-top: 20px;
+}
+
+ul.todo-list {
+  padding: 0;
+  margin: 20px 0 0;
+  list-style: none;
+
+  li.item {
+    display: flex;
+    align-items: center;
+    padding: 0;
+
+    label {
+      padding: 0 5px;
+      margin-left: 10px;
+      position: relative;
+      color: #9191a7;
+      position: relative;
+    }
+
+    input:checked + label {
+      color: #dadae6;
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        border-top: 1px solid #dadae6;
+      }
+    }
+  }
 }

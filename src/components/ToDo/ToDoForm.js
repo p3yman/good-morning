@@ -3,8 +3,14 @@ import React, { useState } from "react";
 function ToDoForm(props) {
   const [item, setItem] = useState("");
 
+  function submit(e) {
+    const title = item;
+    setItem("");
+    props.addItem(e, title);
+  }
+
   return (
-    <form onSubmit={(e) => props.addItem(e, item)}>
+    <form onSubmit={(e) => submit(e)}>
       <input
         type="text"
         id="item"
